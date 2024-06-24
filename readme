@@ -1,0 +1,34 @@
+# Sudoku Solver using Pycosat
+
+This is a Sudoku solver implemented in Python using the `pycosat` library.
+
+## Requirements
+
+- Python 
+- Pycosat library
+
+## How to Run
+
+1. Ensure that you have the required software installed. You can install Pycosat with pip:
+
+pip install pycosat
+
+
+2. Each line of the file 'p.txt' should represent a Sudoku puzzle, with each cell represented by a digit (1-9) or a period (.) for empty cells.
+
+3. Run the Python script:
+
+python lab4.py
+
+
+## How It Works
+
+The script reads Sudoku puzzles from 'p.txt', and for each puzzle, it generates a list of constraints that represent the rules of Sudoku. These constraints are then passed to `pycosat.solve()`, which finds a solution that satisfies all the constraints. The solution is then processed and printed out. The time taken to solve all puzzles is also printed at the end.
+
+## output
+
+The output.txt file contains the output of given sodoku's. You will be able to see complete output only after complete py file gets executed
+
+## Note
+
+The size of the Sudoku grid (n) is determined by the user's input at runtime. The grid size must be a perfect square (e.g., 4, 9, 16) due to the rules of Sudoku.
